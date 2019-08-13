@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap-override.css">
+
+    <title>Syracuse Acupuncture Clinic</title>
+  </head>
+  <body>
+
+    <!--make header with name and address-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm text-left">
+          <a class="link-black upper-text-size" href="mailto:debraleegertz.lic.ac@gmail.com">
+            <p>
+              debraleegertz.lic.ac@gmail.com
+            <p>
+          </a>
+        </div>
+        <div class="col-sm text-right">
+          <a href="https://www.google.com/maps/place/510+Jamesville+Ave,+Syracuse,+NY+13210,+USA/@43.0206688,-76.134825,17z/data=!3m1!4b1!4m5!3m4!1s0x89d9f47ffabfdaa3:0x7c332f18623e1052!8m2!3d43.0206688!4d-76.1326363" target="_blank" class="link-black upper-text-size">
+            <p>
+              510 Jamesville Ave. Syracuse, NY 13210
+            </p>
+          </a>
+        </div>
+      </div> 
+    </div>
+
+    <!--header with business name-->
+    <!Style this further>
+    <div class="contain-fluid">
+      <div class="row">
+        <div class="col-sm text-center">
+          <h1 class="company-name"> <strong>Syracuse Acupuncture Clinic</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="contain-fluid">
+      <div class="row pb-3">
+        <div class="col-sm text-center">
+          <h4 class="owner-name">Debra Lee Gertz Dipl.O.M., L.Ac.</h4>
+        </div>
+      </div>
+    </div>
+
+    <!--Navigation Menu-->
+    <!--make these into buttons to other pages-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm text-center">
+          <a class="link-black" href="home-page.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="link-black" href="contact-page.html">
+            <p>Contact</p>
+          </a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="link-black" href="map-page.html">
+            <p>Map</p>
+          </a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="link-black" href="forms-page.html">
+            <p>Forms</p>
+          </a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="link-black" href="resources-page.html">
+            <p>Resources</p>
+          </a>
+        </div>
+        <div class="col-sm text-center">
+          <a class="link-black" href="award-page.html">
+            <p>Awards</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--box with an image in it (need to size these equally)-->
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm text-center">
+          <img src="images/spices-2.jpg" class="d-block w-100" alt="default image">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm text-center py-4">
+          <h4>Map</h4>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm text-center">
+          <h6>Location of our Syracuse Office</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm text-center">
+          <h3>My Google Maps Demo</h3>
+          <!--The div element for the map -->
+          <div id="map"></div>
+          <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt2iz3O4K6kulb0Teq4bFJLqC-bh80vNk&callback=initMap">
+    </script>
+            
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
