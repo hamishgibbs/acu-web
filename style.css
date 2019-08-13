@@ -11,8 +11,35 @@ ul {
 	list-style: none;
 }
 
+.grid-container{
+	display: grid;
+	grid-template-rows: auto, auto, auto, auto;
+	background-color: #6566ff
+	height: 100%;
+}
+
+.header {
+	grid-row: 1;
+	padding: 15px;
+	text-align: center;
+	background-color: #6666ff;
+	color: #ffffff;
+}
+
+.name {
+	line-height: 0%;
+	text-align: left;
+	color: #ffffff;
+}
+
+.contact {
+	line-height: 0%;
+	text-align: left;
+	color: #ffffff;
+}
 
 .menu-bar {
+	grid-row: 2;
 	display: flex;
 	justify-content: space-around;
 	background-color: #6566ff
@@ -29,11 +56,4 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-}
-
-.header {
-	padding: 15px;
-	text-align: center;
-	background-color: #6666ff;
-	color: #ffffff;
 }
